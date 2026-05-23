@@ -68,8 +68,6 @@ nav ul li a:hover {
     color: var(--secondary-color);
 }
 
-/* --- SECCIÓN HERO AJUSTADA CORRECTAMENTE --- */
-
 .hero {
     position: relative;
 }
@@ -80,7 +78,6 @@ nav ul li a:hover {
     height: auto;
 }
 
-/* Título con posición absoluta y fondo semitransparente arriba de la imagen */
 .hero h1 {
     position: absolute;
     top: 30px;
@@ -92,7 +89,6 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
-/* Cuadro de contenido flotando encima y centrado abajo */
 .hero article {
     position: absolute;
     bottom: 30px;
@@ -103,7 +99,6 @@ nav ul li a:hover {
     border-radius: 0px;
     margin: 0;
     border-left: 8px solid var(--accent1-color);
-    /* Línea verde izquierda como en la foto */
 }
 
 .hero article img {
@@ -112,8 +107,6 @@ nav ul li a:hover {
     height: auto;
     margin-left: 15px;
 }
-
-/* --- FIN SECCIÓN HERO --- */
 
 footer {
     display: flex;
