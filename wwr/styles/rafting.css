@@ -68,8 +68,10 @@ nav ul li a:hover {
     color: var(--secondary-color);
 }
 
+/* --- SECCIÓN HERO AJUSTADA CORRECTAMENTE --- */
+
 .hero {
-    margin-bottom: 20px;
+    position: relative;
 }
 
 .hero > img {
@@ -78,22 +80,30 @@ nav ul li a:hover {
     height: auto;
 }
 
-/* El título ahora se queda abajo de la imagen o en su sitio normal */
+/* Título con posición absoluta y fondo semitransparente arriba de la imagen */
 .hero h1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
     padding: 16px;
     text-align: center;
-    color: var(--primary-color);
+    background-color: rgba(17, 29, 19, 0.7);
+    color: #ffffff;
 }
 
-
+/* Cuadro de contenido flotando encima y centrado abajo */
 .hero article {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 5px;
-    margin: 16px;
-    border: 1px solid #ddd;
-    border-left: 5px solid var(--accent1-color);
-    
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 0px;
+    margin: 0;
+    border-left: 8px solid var(--accent1-color);
+    /* Línea verde izquierda como en la foto */
 }
 
 .hero article img {
@@ -102,6 +112,8 @@ nav ul li a:hover {
     height: auto;
     margin-left: 15px;
 }
+
+/* --- FIN SECCIÓN HERO --- */
 
 footer {
     display: flex;
