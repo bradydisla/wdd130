@@ -1,6 +1,7 @@
 :root {
     --primary-color: #00a896;
     --secondary-color: #ff8c42;
+    --accent1-color: #02c39a;
     --accent2-color: #111d13;
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -68,7 +69,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    position: relative;
+    margin-bottom: 20px;
 }
 
 .hero > img {
@@ -77,26 +78,22 @@ nav ul li a:hover {
     height: auto;
 }
 
+/* El título ahora se queda abajo de la imagen o en su sitio normal */
 .hero h1 {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 100%;
     padding: 16px;
     text-align: center;
-    background-color: rgba(17, 29, 19, 0.75);
-    color: #ffffff;
+    color: var(--primary-color);
 }
 
+
 .hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 5px;
-    margin: 0;
+    margin: 16px;
+    border: 1px solid #ddd;
+    border-left: 5px solid var(--accent1-color);
+    
 }
 
 .hero article img {
