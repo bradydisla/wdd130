@@ -41,11 +41,41 @@ article {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     padding: 10px 0;
 }
+
+header nav {
+    justify-self: end;
+}
+
+.history-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-container img {
+    width: 250px;
+    height: auto;
+}
+.adventures-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.adventures-container figure {
+    flex: 1;
+    text-align: center;
+}
+.adventures-container figure img {
+    width: 100%;
+    height: auto;
+}
+
 
 header img {
     max-width: 120px;
@@ -124,4 +154,8 @@ footer {
     width: 35px;
     height: auto;
     margin-left: 10px;
+}
+.socialmedia {
+    display: flex;
+    gap: 10px;
 }
