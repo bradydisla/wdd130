@@ -44,7 +44,7 @@ article {
     padding: 8px;
 }
 
-/* ── Header: CSS Grid (logo + nav) ── */
+/*  Header: CSS Grid */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -63,7 +63,7 @@ header img {
     height: auto;
 }
 
-/* ── Nav: CSS Flex ── */
+/* Nav: CSS Flex */
 nav ul {
     list-style-type: none;
     display: flex;
@@ -80,7 +80,7 @@ nav ul li a:hover {
     color: var(--secondary-color);
 }
 
-/* ── Hero ── */
+/* Hero */
 .hero {
     position: relative;
 }
@@ -121,7 +121,7 @@ nav ul li a:hover {
     margin-left: 15px;
 }
 
-/* ── History Section ── */
+/* History Section */
 .history-section {
     margin: 16px;
     padding: 8px;
@@ -145,7 +145,7 @@ nav ul li a:hover {
     display: block;
 }
 
-/* ── Adventures Section ── */
+/* Adventures Section */
 .adventures-section {
     margin: 16px;
     padding: 8px;
@@ -179,7 +179,7 @@ nav ul li a:hover {
     margin-top: 6px;
 }
 
-/* ── Footer ── */
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
