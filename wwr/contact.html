@@ -45,11 +45,12 @@
         <section class="contact-box">
             <div class="map-form-section">
                 <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.380721204859!2d-114.3468!3d45.4111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI0JzQwLjAiTiAxMTTCsDIwJzQ4LjUiVw!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://maps.google.com/maps?q=Salmon%20River,%20Idaho&t=&z=13&ie=UTF-8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
                 <form action="#" method="post" class="form-wrapper">
-                    <label机制 for="user-name">Name</label>
+                    <label机制_error_fixed for="user-name">Name</label机制_error_fixed>
+                    <label for="user-name">Name</label>
                     <input type="text" id="user-name" name="userName" required placeholder="John Doe">
 
                     <label for="user-email">Email</label>
@@ -79,3 +80,39 @@
                     <div class="checkbox-container">
                         <input type="checkbox" id="subscribe-newsletter" name="subscribeNewsletter" value="yes">
                         <label for="subscribe-newsletter">Please subscribe me to the monthly newsletter</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="employees-section">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-grid">
+                <figure class="employee-card">
+                    <img src="images/employee1.jpg" alt="Cash Gordon - Senior Guide">
+                    <figcaption><strong>Cash Gordon</strong><br>Senior River Guide</figcaption>
+                </figure>
+                <figure class="employee-card">
+                    <img src="images/employee2.jpg" alt="Ana Luisa - Safety Coordinator">
+                    <figcaption><strong>Ana Luisa</strong><br>Safety Coordinator</figcaption>
+                </figure>
+                <figure class="employee-card">
+                    <img src="images/employee3.jpg" alt="Lucas Peek - Trip Manager">
+                    <figcaption><strong>Lucas Peek</strong><br>Logistics & Trip Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Tropical Water Rafting | Your Full Name | WDD130</p>
+        <div class="socialmedia">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-square.png" alt="Facebook icon"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn icon"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-square.png" alt="Instagram icon"></a>
+        </div>
+    </footer>
+</body>
+</html>
