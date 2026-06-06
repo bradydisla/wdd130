@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Tropical Water Rafting</title>
     <meta name="description"
-      content="Get in touch with Tropical Water Rafting. Find our address, phone, email, and send us a message about reservations or general questions.">
+          content="Get in touch with Tropical Water Rafting. Find our address, phone, email, and send us a message about reservations or general questions.">
     <meta name="author" content="Brady Disla">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -27,68 +27,60 @@
 
     <main>
 
-        <!-- FIX 1: h1 con nombre de la empresa dentro de main -->
         <section class="company-info">
-            <h1>Tropical Water Rafting</h1>
+            <h2>Tropical Water Rafting</h2>
             <address>
-                <p>1234 River Run Road</p>
-                <p>San Juan, Puerto Rico 00901</p>
-                <p><a href="tel:+17875550100">+1 787 555 0100</a></p>
+                <p>Rio Yaque Del Norte, 41000</p>
+                <p>Jarabacoa, Dominican Republic 41000</p>
+                <p><a href="tel:+18095552323">+1 809 555 2323</a></p>
                 <p><a href="mailto:info@tropicalwr.com">info@tropicalwr.com</a></p>
             </address>
         </section>
 
-        <!-- Map (left) + Form (right) -->
         <section class="map-form-section contact-box">
 
             <div class="map-container">
-                <!-- FIX 2: sin style="border:0" inline — el estilo va en el CSS -->
-                <!-- Reemplaza el src con tu enlace real de Google Maps embed   -->
-                <iframe
-                    title="Tropical Water Rafting Location"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0!2d-66.1057!3d18.4655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI3JzU2LjAiTiA2NsKwMDYnMjAuNSJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
-                    width="100%"
-                    height="100%"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <iframe title="Tropical Water Rafting Location"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15024.475141648058!2d-70.64096!3d19.113337!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1c0506bbab023%3A0x6b77df73a9686036!2sJarabacoa!5e0!3m2!1sen!2sdo!4v1710000000000!5m2!1sen!2sdo" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <!-- FIX 3: etiqueta <form> envolviendo todos los campos -->
-            <form class="form-wrapper" action="#" method="get">
+            <form action="#" method="post" class="form-wrapper">
 
                 <label for="user-name">Name</label>
-                <input type="text" id="user-name" name="user-name" placeholder="Placeholder" required>
+                <input type="text" id="user-name" name="user-name" placeholder="Your full name" required>
 
                 <label for="user-email">Email</label>
-                <input type="email" id="user-email" name="user-email" placeholder="Placeholder" required>
+                <input type="email" id="user-email" name="user-email" placeholder="username@example.com" required>
 
                 <fieldset class="radio-group">
                     <legend>Message Purpose</legend>
                     <div class="radio-options">
-                        <label class="radio-label">
-                            <input type="radio" id="general-inquiry" name="message-purpose" value="general-inquiry" required>
-                            General Inquiry
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" id="reservation-question" name="message-purpose" value="reservation-question">
-                            Reservation Question
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" id="website-suggestion" name="message-purpose" value="website-suggestion">
-                            Website Suggestion
-                        </label>
+                        <div class="radio-option-item">
+                            <input type="radio" id="purpose-general" name="message-purpose" value="general-inquiry" required>
+                            <label for="purpose-general">General Inquiry</label>
+                        </div>
+                        <div class="radio-option-item">
+                            <input type="radio" id="purpose-reservation" name="message-purpose" value="reservation-question">
+                            <label for="purpose-reservation">Reservation Question</label>
+                        </div>
+                        <div class="radio-option-item">
+                            <input type="radio" id="purpose-suggestion" name="message-purpose" value="website-suggestion">
+                            <label for="purpose-suggestion">Website Suggestion</label>
+                        </div>
                     </div>
                 </fieldset>
 
                 <label for="user-message">Message</label>
-                <textarea id="user-message" name="user-message" rows="5" placeholder="Type here..." required></textarea>
+                <textarea id="user-message" name="user-message" rows="5" placeholder="Type your message here..." required></textarea>
 
-                <label class="checkbox-label">
+                <div class="checkbox-container">
                     <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
-                    Please Subscribe me to the monthly newsletter
-                </label>
+                    <label for="newsletter">Please Subscribe me to the monthly newsletter</label>
+                </div>
 
                 <button type="submit" class="submit-btn">Get in Touch!</button>
 
@@ -96,7 +88,6 @@
 
         </section>
 
-        <!-- Employee profiles -->
         <section class="employees-section contact-box">
             <h2>We Are Here to Serve You</h2>
             <div class="employee-grid">
@@ -122,7 +113,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 | 🐳Tropical Water Rafting | Brady Disla🐳</p>
+        <p>© 2026 | 🐳Tropical Water Rafting | Brady Disla🐳</p>
         <nav class="socialmedia">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook-square.jpg" alt="Facebook Icon">
