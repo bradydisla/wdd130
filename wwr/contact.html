@@ -1,118 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Tropical Water Rafting</title>
-    <meta name="description" content="Contact Tropical Water Rafting for questions, reservations, and information about our whitewater rafting trips.">
-    <meta name="author" content="Your Full Name">
+    <meta name="description"
+      content="Get in touch with Tropical Water Rafting. Find our address, phone, email, and send us a message about reservations or general questions.">
+    <meta name="author" content="Brady Disla">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
+
     <header>
-        <img src="images/logo.png" alt="Tropical Water Rafting Logo">
+        <img src="images/tropicalwr_logo.jpeg" alt="Tropical Water Rafting Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="site-plan.html">Site Plan</a></li>
+                <li><a href="trips.html">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Tropical Water Rafting - Contact Us</h1>
 
-        <div class="hero">
-            <img src="images/hero-contact.jpg" alt="Rafting adventure background group">
-            <article>
-                <h2>Get in Touch</h2>
-                <p>Have questions about our multi-day trips, safety guides, or group discounts? Drop us a message or find our headquarters on the map below. Our team is ready to help you plan your next wild adventure!</p>
-                <img src="images/paddles.jpg" alt="Rafting paddles crossed">
-            </article>
-        </div>
-
+        <!-- FIX 1: h1 con nombre de la empresa dentro de main -->
         <section class="company-info">
-            <h2>Our Headquarters</h2>
+            <h1>Tropical Water Rafting</h1>
             <address>
-                <p>123 Rapid Current Way, Salmon River Canyon, ID 83549</p>
-                <p>Phone: <a href="tel:15551234567">(555) 123-4567</a></p>
-                <p>Email: <a href="mailto:info@tropicalwaterrafting.com">info@tropicalwaterrafting.com</a></p>
+                <p>1234 River Run Road</p>
+                <p>San Juan, Puerto Rico 00901</p>
+                <p><a href="tel:+17875550100">+1 787 555 0100</a></p>
+                <p><a href="mailto:info@tropicalwr.com">info@tropicalwr.com</a></p>
             </address>
         </section>
 
-        <section class="contact-box">
-            <div class="map-form-section">
-                <div class="map-container">
-                    <iframe src="https://maps.google.com/maps?q=Salmon%20River,%20Idaho&t=&z=13&ie=UTF-8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+        <!-- Map (left) + Form (right) -->
+        <section class="map-form-section contact-box">
 
-                <form action="#" method="post" class="form-wrapper">
-                    <label机制_error_fixed for="user-name">Name</label机制_error_fixed>
-                    <label for="user-name">Name</label>
-                    <input type="text" id="user-name" name="userName" required placeholder="John Doe">
-
-                    <label for="user-email">Email</label>
-                    <input type="email" id="user-email" name="userEmail" required placeholder="john@example.com">
-
-                    <fieldset class="radio-group">
-                        <legend>Purpose of Message</legend>
-                        <div class="radio-options">
-                            <div class="radio-option-item">
-                                <input type="radio" id="purpose-general" name="messagePurpose" value="general" checked>
-                                <label for="purpose-general">General Inquiry</label>
-                            </div>
-                            <div class="radio-option-item">
-                                <input type="radio" id="purpose-reservation" name="messagePurpose" value="reservation">
-                                <label for="purpose-reservation">Reservation Question</label>
-                            </div>
-                            <div class="radio-option-item">
-                                <input type="radio" id="purpose-complaint" name="messagePurpose" value="complaint">
-                                <label for="purpose-complaint">Website Suggestion</label>
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <label for="user-message">Message</label>
-                    <textarea id="user-message" name="userMessage" rows="5" required placeholder="Write your thoughts here..."></textarea>
-
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="subscribe-newsletter" name="subscribeNewsletter" value="yes">
-                        <label for="subscribe-newsletter">Please subscribe me to the monthly newsletter</label>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+            <div class="map-container">
+                <!-- FIX 2: sin style="border:0" inline — el estilo va en el CSS -->
+                <!-- Reemplaza el src con tu enlace real de Google Maps embed   -->
+                <iframe
+                    title="Tropical Water Rafting Location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0!2d-66.1057!3d18.4655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI3JzU2LjAiTiA2NsKwMDYnMjAuNSJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                    width="100%"
+                    height="100%"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
+
+            <!-- FIX 3: etiqueta <form> envolviendo todos los campos -->
+            <form class="form-wrapper" action="#" method="get">
+
+                <label for="user-name">Name</label>
+                <input type="text" id="user-name" name="user-name" placeholder="Placeholder" required>
+
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" name="user-email" placeholder="Placeholder" required>
+
+                <fieldset class="radio-group">
+                    <legend>Message Purpose</legend>
+                    <div class="radio-options">
+                        <label class="radio-label">
+                            <input type="radio" id="general-inquiry" name="message-purpose" value="general-inquiry" required>
+                            General Inquiry
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" id="reservation-question" name="message-purpose" value="reservation-question">
+                            Reservation Question
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" id="website-suggestion" name="message-purpose" value="website-suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
+                </fieldset>
+
+                <label for="user-message">Message</label>
+                <textarea id="user-message" name="user-message" rows="5" placeholder="Type here..." required></textarea>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    Please Subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit" class="submit-btn">Get in Touch!</button>
+
+            </form>
+
         </section>
 
-        <section class="employees-section">
+        <!-- Employee profiles -->
+        <section class="employees-section contact-box">
             <h2>We Are Here to Serve You</h2>
             <div class="employee-grid">
+
                 <figure class="employee-card">
-                    <img src="images/employee1.jpg" alt="Cash Gordon - Senior Guide">
-                    <figcaption><strong>Cash Gordon</strong><br>Senior River Guide</figcaption>
+                    <img src="images/cash_gordon.jpg" alt="Cash Gordon, Instructor">
+                    <figcaption>Cash Gordon — Instructor</figcaption>
                 </figure>
+
                 <figure class="employee-card">
-                    <img src="images/employee2.jpg" alt="Ana Luisa - Safety Coordinator">
-                    <figcaption><strong>Ana Luisa</strong><br>Safety Coordinator</figcaption>
+                    <img src="images/ana_luisa.jpg" alt="Ana Luisa, River Guide">
+                    <figcaption>Ana Luisa — River Guide</figcaption>
                 </figure>
+
                 <figure class="employee-card">
-                    <img src="images/employee3.jpg" alt="Lucas Peek - Trip Manager">
-                    <figcaption><strong>Lucas Peek</strong><br>Logistics & Trip Manager</figcaption>
+                    <img src="images/lucas_peek.jpg" alt="Lucas Peek, Safety Director">
+                    <figcaption>Lucas Peek — Safety Director</figcaption>
                 </figure>
+
             </div>
         </section>
+
     </main>
 
     <footer>
-        <p>© 2026 Tropical Water Rafting | Your Full Name | WDD130</p>
-        <div class="socialmedia">
-            <a href="https://facebook.com" target="_blank"><img src="images/facebook-square.png" alt="Facebook icon"></a>
-            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn icon"></a>
-            <a href="https://instagram.com" target="_blank"><img src="images/instagram-square.png" alt="Instagram icon"></a>
-        </div>
+        <p>&copy; 2026 | 🐳Tropical Water Rafting | Brady Disla🐳</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-square.jpg" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin.jpg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram-square.jpg" alt="Instagram Icon">
+            </a>
+        </nav>
     </footer>
+
 </body>
 </html>
