@@ -251,7 +251,7 @@ footer .socialmedia {
     min-height: 380px;
 }
 
-/* Form structure layout using explicit rows and columns */
+/* Estructura del formulario usando CSS Grid */
 .form-wrapper {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -283,7 +283,7 @@ footer .socialmedia {
     border-color: transparent;
 }
 
-/* Radio buttons container layout */
+/* Alineación para los Radio Buttons */
 .radio-group {
     grid-column: 1 / -1;
     display: grid;
@@ -328,7 +328,7 @@ footer .socialmedia {
     box-sizing: border-box;
 }
 
-/* Checkbox layout alignment correction */
+/* Alineación para el Checkbox */
 .checkbox-container {
     grid-column: 1 / -1;
     display: flex;
@@ -343,7 +343,7 @@ footer .socialmedia {
     cursor: pointer;
 }
 
-/* Action button styled using brand parameters */
+/* Botón de envío */
 .submit-btn {
     grid-column: 1 / -1;
     width: 100%;
@@ -367,7 +367,7 @@ footer .socialmedia {
     outline-offset: 2px;
 }
 
-/* Employees Block Profiles Grid */
+/* Sección de Empleados */
 .employees-section {
     background-color: #e8e8e8;
     padding: 1.5rem 1rem;
@@ -408,7 +408,7 @@ footer .socialmedia {
     font-size: 0.85rem;
 }
 
-/* Responsive Media Query Breakpoint rules */
+/* Media Query Responsiva */
 @media (max-width: 700px) {
     header, main, footer  { width: 100%; }
     .map-form-section     { grid-template-columns: 1fr; }
