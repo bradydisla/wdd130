@@ -207,25 +207,21 @@ footer .socialmedia {
 
 
 /* ============================================================
-   CONTACT PAGE — additions only (no repetition of above)
+   CONTACT PAGE — Additions (Optimized & Verified)
    ============================================================ */
 
-/* Company info block: centered text, neutralizes the global
-   section margin/padding so it doesn't push things around   */
+/* Company info block */
 .company-info {
     text-align: center;
     margin: 0 16px;
     padding: 1.5rem 0;
 }
 
-/* address: only override font-style and line-height;
-   color and font-family already set globally on body        */
 .company-info address {
     font-style: normal;
     line-height: 1.9;
 }
 
-/* Remove underline from address links; color is inherited   */
 .company-info address a {
     text-decoration: none;
 }
@@ -234,13 +230,13 @@ footer .socialmedia {
     color: var(--secondary-color);
 }
 
-/* Shared border-box used by map-form AND employees sections */
+/* Shared border-box wrapper */
 .contact-box {
     margin: 0 16px 16px;
     border: 1px solid var(--border-color);
 }
 
-/* Map + Form: two equal columns, stretching to same height  */
+/* Map + Form layout grid */
 .map-form-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -258,7 +254,7 @@ footer .socialmedia {
     min-height: 380px;
 }
 
-/* Form uses a 2-col grid: label | field                     */
+/* Form layout using 2-column Grid */
 .form-wrapper {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -267,25 +263,24 @@ footer .socialmedia {
     padding: 1.2rem 1.4rem;
 }
 
-/* Bold + nowrap; color/font already global on body          */
 .form-wrapper label {
     font-weight: bold;
     white-space: nowrap;
     padding-top: 0.3rem;
 }
 
-/* Shared style for text + email inputs                      */
+/* Input Fields (Text + Email) with accessible padding */
 .form-wrapper input[type="text"],
 .form-wrapper input[type="email"] {
     width: 100%;
-    padding: 0.3rem 0.5rem;
+    padding: 0.5rem;
     border: 1px solid var(--border-color);
     border-radius: 3px;
     font-size: 0.9rem;
     box-sizing: border-box;
 }
 
-/* Single focus rule covers all three focusable fields       */
+/* Focus indicator for all interactive fields */
 .form-wrapper input[type="text"]:focus,
 .form-wrapper input[type="email"]:focus,
 .form-wrapper textarea:focus {
@@ -293,8 +288,7 @@ footer .socialmedia {
     border-color: transparent;
 }
 
-/* Fieldset spans both grid columns, creates its own
-   2-col sub-grid so legend aligns with Name/Email labels    */
+/* Fieldset and radio grid layout */
 .radio-group {
     grid-column: 1 / -1;
     display: grid;
@@ -311,7 +305,6 @@ footer .socialmedia {
     white-space: nowrap;
 }
 
-/* Radio options stacked vertically in the right column      */
 .radio-options {
     display: flex;
     flex-direction: column;
@@ -325,10 +318,10 @@ footer .socialmedia {
     font-weight: normal;
 }
 
-/* Textarea shares border/radius/font with text inputs above */
+/* Textarea styling */
 .form-wrapper textarea {
     width: 100%;
-    padding: 0.4rem 0.5rem;
+    padding: 0.5rem;
     border: 1px solid var(--border-color);
     border-radius: 3px;
     font-family: var(--body-font);
@@ -337,7 +330,7 @@ footer .socialmedia {
     box-sizing: border-box;
 }
 
-/* Checkbox row spans both grid columns                      */
+/* Checkbox alignment */
 .checkbox-label {
     grid-column: 1 / -1;
     display: flex;
@@ -347,37 +340,37 @@ footer .socialmedia {
     font-size: 0.85rem;
 }
 
-/* Submit button spans both columns, full width              */
+/* Call to action Submit Button — Fixed with brand colors */
 .submit-btn {
     grid-column: 1 / -1;
     width: 100%;
-    padding: 0.55rem;
-    background-color: #d8d8d8;
-    border: 1px solid var(--border-color);
+    padding: 0.75rem;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: none;
     border-radius: 3px;
     font-family: var(--body-font);
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .submit-btn:hover,
 .submit-btn:focus {
     background-color: var(--primary-color);
-    color: #fff;
+    color: #ffffff;
     outline: 2px solid var(--accent2-color);
     outline-offset: 2px;
 }
 
-/* Employees section                                         */
+/* Employees Profiles Section */
 .employees-section {
     background-color: #e8e8e8;
     padding: 1.5rem 1rem;
     text-align: center;
 }
 
-/* h2 font/family from global rule; only override color here */
 .employees-section h2 {
     color: var(--accent2-color);
     margin-bottom: 1.2rem;
@@ -391,7 +384,6 @@ footer .socialmedia {
     margin: 0 auto;
 }
 
-/* figure: reset global margin/padding from nav,p,section,article rule */
 .employee-card {
     background: #d0d0d0;
     border-radius: 4px;
@@ -408,13 +400,12 @@ footer .socialmedia {
     object-position: top;
 }
 
-/* figcaption: body font/color inherited; only spacing       */
 .employee-card figcaption {
     padding: 0.5rem;
     font-size: 0.85rem;
 }
 
-/* Responsive                                                */
+/* Responsive Media Query */
 @media (max-width: 700px) {
     header, main, footer  { width: 100%; }
     .map-form-section     { grid-template-columns: 1fr; }
