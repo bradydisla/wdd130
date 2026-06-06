@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tropical Water Rafting</title>
+    <meta name="description"
+      content="Get in touch with Tropical Water Rafting. Find our address, phone, email, and send us a message about reservations or general questions.">
+    <meta name="author" content="Brady Disla">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/tropicalwr_logo.jpeg" alt="Tropical Water Rafting Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Company info centered above the map/form -->
+        <section class="company-info">
+            <h2>Tropical Water Rafting</h2>
+            <address>
+                <p>Rio Yaque Del Norte , 41000</p>
+                <p>Jarabacoa, Dominican Republic 41000</p>
+                <p><a href="tel:+18095552323">+1 809 555 2323</a></p>
+                <p><a href="mailto:info@tropicalwr.com">info@tropicalwr.com</a></p>
+            </address>
+        </section>
+
+        <!-- Map left and right -->
+        <section class="map-form-section contact-box">
+
+            <div class="map-container">
+                <!-- GOOGLE MAPS-->
+                <iframe
+                    title="Tropical Water Rafting Location"
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60314.04915608828!2d-70.61432520000002!3d19.123965600000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb0303a7467ec73%3A0x7ea5bf093b5de147!2s41000%20Jarabacoa!5e0!3m2!1ses-419!2sdo!4v1780786565794!5m2!1ses-419!2sdo" 
+                   width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form-wrapper">
+
+                <label for="user-name">Name</label>
+                <input type="text" id="user-name" name="user-name" placeholder="Placeholder" required>
+
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" name="user-email" placeholder="Placeholder" required>
+
+                <fieldset class="radio-group">
+                    <legend>Message Purpose</legend>
+                    <div class="radio-options">
+                        <label class="radio-label">
+                            <input type="radio" name="message-purpose" value="general-inquiry" required>
+                            General Inquiry
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="message-purpose" value="reservation-question">
+                            Reservation Question
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="message-purpose" value="website-suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
+                </fieldset>
+
+                <label for="user-message">Message</label>
+                <textarea id="user-message" name="user-message" rows="5" placeholder="Type here..." required></textarea>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" name="newsletter" value="subscribe">
+                    Please Subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit" class="submit-btn">Get in Touch!</button>
+
+            </div>
+
+        </section>
+
+        <!-- Employee profiles below -->
+        <section class="employees-section contact-box">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-grid">
+
+                <figure class="employee-card">
+                    <img src="images/cash_gordon.jpg" alt="Cash Gordon, Instructor">
+                    <figcaption>Cash Gordon — Instructor</figcaption>
+                </figure>
+
+                <figure class="employee-card">
+                    <img src="images/ana_luisa.jpg" alt="Ana Luisa, River Guide">
+                    <figcaption>Ana Luisa — River Guide</figcaption>
+                </figure>
+
+                <figure class="employee-card">
+                    <img src="images/lucas_peek.jpg" alt="Lucas Peek, Safety Director">
+                    <figcaption>Lucas Peek — Safety Director</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | 🐳Tropical Water Rafting | Brady Disla🐳</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-square.jpg" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin.jpg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram-square.jpg" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+</html>

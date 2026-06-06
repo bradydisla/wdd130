@@ -44,7 +44,7 @@ article {
     padding: 8px;
 }
 
-/*  Header: CSS Grid */
+/* Header: CSS Grid */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -203,4 +203,224 @@ footer .socialmedia {
     width: 35px;
     height: auto;
     margin-left: 10px;
+}
+
+
+/* ============================================================
+   CONTACT PAGE — additions only (no repetition of above)
+   ============================================================ */
+
+/* Company info block: centered text, neutralizes the global
+   section margin/padding so it doesn't push things around   */
+.company-info {
+    text-align: center;
+    margin: 0 16px;
+    padding: 1.5rem 0;
+}
+
+/* address: only override font-style and line-height;
+   color and font-family already set globally on body        */
+.company-info address {
+    font-style: normal;
+    line-height: 1.9;
+}
+
+/* Remove underline from address links; color is inherited   */
+.company-info address a {
+    text-decoration: none;
+}
+
+.company-info address a:hover {
+    color: var(--secondary-color);
+}
+
+/* Shared border-box used by map-form AND employees sections */
+.contact-box {
+    margin: 0 16px 16px;
+    border: 1px solid var(--border-color);
+}
+
+/* Map + Form: two equal columns, stretching to same height  */
+.map-form-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 380px;
+}
+
+.map-container {
+    height: 100%;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+}
+
+/* Form uses a 2-col grid: label | field                     */
+.form-wrapper {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: start;
+    gap: 0.55rem 0.8rem;
+    padding: 1.2rem 1.4rem;
+}
+
+/* Bold + nowrap; color/font already global on body          */
+.form-wrapper label {
+    font-weight: bold;
+    white-space: nowrap;
+    padding-top: 0.3rem;
+}
+
+/* Shared style for text + email inputs                      */
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"] {
+    width: 100%;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+/* Single focus rule covers all three focusable fields       */
+.form-wrapper input[type="text"]:focus,
+.form-wrapper input[type="email"]:focus,
+.form-wrapper textarea:focus {
+    outline: 2px solid var(--primary-color);
+    border-color: transparent;
+}
+
+/* Fieldset spans both grid columns, creates its own
+   2-col sub-grid so legend aligns with Name/Email labels    */
+.radio-group {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: start;
+    gap: 0 0.8rem;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.radio-group legend {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Radio options stacked vertically in the right column      */
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: normal;
+}
+
+/* Textarea shares border/radius/font with text inputs above */
+.form-wrapper textarea {
+    width: 100%;
+    padding: 0.4rem 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/* Checkbox row spans both grid columns                      */
+.checkbox-label {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: normal;
+    font-size: 0.85rem;
+}
+
+/* Submit button spans both columns, full width              */
+.submit-btn {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 0.55rem;
+    background-color: #d8d8d8;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: var(--primary-color);
+    color: #fff;
+    outline: 2px solid var(--accent2-color);
+    outline-offset: 2px;
+}
+
+/* Employees section                                         */
+.employees-section {
+    background-color: #e8e8e8;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+/* h2 font/family from global rule; only override color here */
+.employees-section h2 {
+    color: var(--accent2-color);
+    margin-bottom: 1.2rem;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* figure: reset global margin/padding from nav,p,section,article rule */
+.employee-card {
+    background: #d0d0d0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.employee-card img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* figcaption: body font/color inherited; only spacing       */
+.employee-card figcaption {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+}
+
+/* Responsive                                                */
+@media (max-width: 700px) {
+    header, main, footer  { width: 100%; }
+    .map-form-section     { grid-template-columns: 1fr; }
+    .map-container iframe { min-height: 220px; }
+    .form-wrapper         { grid-template-columns: 1fr; }
+    .radio-group          { grid-template-columns: 1fr; }
+    .radio-options        { grid-column: 1; }
+    .employee-grid        { grid-template-columns: 1fr; }
 }
