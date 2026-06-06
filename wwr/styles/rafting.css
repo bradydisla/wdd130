@@ -207,10 +207,10 @@ footer .socialmedia {
 
 
 /* ============================================================
-   CONTACT PAGE — Additions (Optimized & Verified)
+   CONTACT PAGE — ADDITIONS ONLY
    ============================================================ */
 
-/* Company info block */
+/* Company info block: centered text */
 .company-info {
     text-align: center;
     margin: 0 16px;
@@ -230,13 +230,13 @@ footer .socialmedia {
     color: var(--secondary-color);
 }
 
-/* Shared border-box wrapper */
+/* Shared border-box layout wrapper */
 .contact-box {
     margin: 0 16px 16px;
     border: 1px solid var(--border-color);
 }
 
-/* Map + Form layout grid */
+/* Map + Form layout grid container */
 .map-form-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -254,7 +254,7 @@ footer .socialmedia {
     min-height: 380px;
 }
 
-/* Form layout using 2-column Grid */
+/* Form structure wrapper */
 .form-wrapper {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -269,7 +269,7 @@ footer .socialmedia {
     padding-top: 0.3rem;
 }
 
-/* Input Fields (Text + Email) with accessible padding */
+/* Inputs with responsive paddings and box model constraints */
 .form-wrapper input[type="text"],
 .form-wrapper input[type="email"] {
     width: 100%;
@@ -280,7 +280,7 @@ footer .socialmedia {
     box-sizing: border-box;
 }
 
-/* Focus indicator for all interactive fields */
+/* Interactive focus transitions */
 .form-wrapper input[type="text"]:focus,
 .form-wrapper input[type="email"]:focus,
 .form-wrapper textarea:focus {
@@ -288,7 +288,7 @@ footer .socialmedia {
     border-color: transparent;
 }
 
-/* Fieldset and radio grid layout */
+/* Radio button fieldset subgrid alignment */
 .radio-group {
     grid-column: 1 / -1;
     display: grid;
@@ -318,7 +318,7 @@ footer .socialmedia {
     font-weight: normal;
 }
 
-/* Textarea styling */
+/* Textarea area constraints */
 .form-wrapper textarea {
     width: 100%;
     padding: 0.5rem;
@@ -330,7 +330,7 @@ footer .socialmedia {
     box-sizing: border-box;
 }
 
-/* Checkbox alignment */
+/* Checkbox label styling grid layout */
 .checkbox-label {
     grid-column: 1 / -1;
     display: flex;
@@ -340,7 +340,7 @@ footer .socialmedia {
     font-size: 0.85rem;
 }
 
-/* Call to action Submit Button — Fixed with brand colors */
+/* Call to Action Call Button using brand variables */
 .submit-btn {
     grid-column: 1 / -1;
     width: 100%;
@@ -364,7 +364,7 @@ footer .socialmedia {
     outline-offset: 2px;
 }
 
-/* Employees Profiles Section */
+/* Employee Profiles Section */
 .employees-section {
     background-color: #e8e8e8;
     padding: 1.5rem 1rem;
@@ -405,7 +405,7 @@ footer .socialmedia {
     font-size: 0.85rem;
 }
 
-/* Responsive Media Query */
+/* Responsive Breakpoint Layout Media Query */
 @media (max-width: 700px) {
     header, main, footer  { width: 100%; }
     .map-form-section     { grid-template-columns: 1fr; }
