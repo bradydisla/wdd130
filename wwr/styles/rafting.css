@@ -1,9 +1,9 @@
 :root {
     --primary-color:   #007a6e;
-    --secondary-color: #fd6100;
+    --secondary-color: #02c39a;
     --accent1-color:   #02c39a;
     --accent2-color:   #111d13;
-    --bg-color:        #d3d3d3;
+    --bg-color:        #faf2f2;
     --hero-overlay:    rgba(17, 29, 19, 0.7);
     --article-bg:      rgba(255, 255, 255, 0.85);
     --border-color:    #cccccc;
