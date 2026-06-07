@@ -1,3 +1,211 @@
+:root {
+    --primary-color:   #007a6e;
+    --secondary-color: #fd6100;
+    --accent1-color:   #02c39a;
+    --accent2-color:   #111d13;
+    --bg-color:        #d3d3d3;
+    --hero-overlay:    rgba(17, 29, 19, 0.7);
+    --article-bg:      rgba(255, 255, 255, 0.85);
+    --border-color:    #cccccc;
+    --heading-font:    "Georgia", "Times New Roman", serif;
+    --body-font:       Arial, Helvetica, sans-serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent2-color);
+    background-color: var(--bg-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Header: CSS Grid */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header nav {
+    justify-self: end;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Nav: CSS Flex */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero */
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--hero-overlay);
+    color: #ffffff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    background-color: var(--article-bg);
+    padding: 20px;
+    border-radius: 0px;
+    margin: 0;
+    border-left: 8px solid var(--accent1-color);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin-left: 15px;
+}
+
+/* History Section */
+.history-section {
+    margin: 16px;
+    padding: 8px;
+}
+
+.history-section h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.history-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-container img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+/* Adventures Section */
+.adventures-section {
+    margin: 16px;
+    padding: 8px;
+}
+
+.adventures-section h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.adventures-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.adventures-container figure {
+    flex: 1;
+    text-align: center;
+}
+
+.adventures-container figure img {
+    width: 100%;
+    height: auto;
+}
+
+.adventures-container figcaption {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 6px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: auto;
+    margin-left: 10px;
+}
+
+
 /* ============================================================
    CONTACT PAGE STYLES
    ============================================================ */
@@ -15,7 +223,6 @@
 
 .company-info address a {
     text-decoration: none;
-    color: var(--primary-color);
 }
 
 .company-info address a:hover {
@@ -47,7 +254,7 @@
 /* Estructura del formulario usando CSS Grid */
 .form-wrapper {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: max-content 1fr;
     align-items: start;
     gap: 0.6rem 0.8rem;
     padding: 1.2rem 1.4rem;
@@ -80,7 +287,7 @@
 .radio-group {
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: max-content 1fr;
     align-items: start;
     gap: 0 0.8rem;
     border: none;
@@ -156,13 +363,13 @@
 .submit-btn:focus {
     background-color: var(--primary-color);
     color: #ffffff;
-    outline: 2px solid var(--accent1-color); /* Corregido para alto contraste */
+    outline: 2px solid var(--accent2-color);
     outline-offset: 2px;
 }
 
 /* Sección de Empleados */
 .employees-section {
-    background-color: var(--bg-color); /* Corregido: usa la variable del sitio */
+    background-color: #e8e8e8;
     padding: 1.5rem 1rem;
     text-align: center;
 }
@@ -181,8 +388,7 @@
 }
 
 .employee-card {
-    background: rgba(0, 0, 0, 0.05); /* Corregido: fondo accesible */
-    border: 1px solid var(--border-color); /* Corregido: borde estandarizado */
+    background: #d0d0d0;
     border-radius: 4px;
     overflow: hidden;
     margin: 0;
@@ -200,7 +406,6 @@
 .employee-card figcaption {
     padding: 0.5rem;
     font-size: 0.85rem;
-    color: var(--accent2-color);
 }
 
 /* Media Query Responsiva */
