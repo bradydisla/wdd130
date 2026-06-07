@@ -1,7 +1,7 @@
 :root {
     --primary-color:   #007a6e;
-    --secondary-color: #02c39a;
-    --accent1-color:   #02c39a;
+    --secondary-color: #007a6e;
+    --accent1-color:   #007a6e;
     --accent2-color:   #111d13;
     --bg-color:        #faf2f2;
     --hero-overlay:    rgba(17, 29, 19, 0.7);
