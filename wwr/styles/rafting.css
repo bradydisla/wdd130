@@ -109,7 +109,7 @@ nav ul li a:hover {
     right: 30px;
     background-color: var(--article-bg);
     padding: 20px;
-    border-radius: 0px;
+    border-radius: 0;
     margin: 0;
     border-left: 8px solid var(--accent1-color);
 }
@@ -421,8 +421,6 @@ footer .socialmedia {
 
 /* ============================================================
    HOME PAGE STYLES
-   Add these rules at the bottom of your rafting.css file
-   (after the trips styles if you already added those)
    ============================================================ */
 
 /* Call to Action Banner */
@@ -585,7 +583,6 @@ footer .socialmedia {
 
 /* ============================================================
    TRIPS PAGE STYLES
-   Add these rules at the bottom of your rafting.css file
    ============================================================ */
 
 /* Call to Action Banner */
@@ -699,10 +696,10 @@ footer .socialmedia {
     width: fit-content;
 }
 
-.level-easy   { background-color: #d4edda; color: #155724; }
-.level-moderate { background-color: #fff3cd; color: #856404; }
-.level-extreme  { background-color: #f8d7da; color: #721c24; }
-.level-custom   { background-color: #d1ecf1; color: #0c5460; }
+.level-easy     { background-color: #155724; color: #ffffff; }
+.level-moderate { background-color: #5a4200; color: #ffffff; }
+.level-extreme  { background-color: #721c24; color: #ffffff; }
+.level-custom   { background-color: #0c5460; color: #ffffff; }
 
 /* Trip Details List */
 .trip-details {
